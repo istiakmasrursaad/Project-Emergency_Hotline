@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EmergencyServices-Hotline</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
 </head>
 <body>
+    <nav class="flex justify-between items-center  p-2 h-[100px]">
+        <div class="flex items-center gap-2 ">
+            <img class="h-[45px] w-[45px]" src="assets/logo.png" alt="">
+            <p class="text-[#006747] font-bold">Emergency<br>Service</p>
+        </div>
+
+        <div>
+            <ol class=" flex-col sm:flex sm:flex-row gap-1">
+                <li class="flex items-center justify-center px-5 py-1 gap-2 bg-[#41FF6B1A] rounded-3xl font-bold">
+                    <p id="heart-count">0</p><img src="assets/heart.png" alt="" class="h-[26px] w-[26px]">
+                </li>
+                <li class="flex justify-center items-center font-bold px-5 py-1 gap-2 bg-[#41FF6B1A] rounded-3xl">
+                    <p id="coin-count">100</p><img src="assets/coin.png" alt="" class="h-[25px] w-[25px]" id="">
+                </li>
+                <li class="flex justify-center items-center px-5 py-1 bg-[#00A63E] text-white rounded-3xl font-bold"><span id="copy-count" class="mr-3">0</span> Copy</li>
+            </ol>
+        </div>
+    </nav>
 
     
     <script src="script.js"></script>
