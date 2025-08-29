@@ -5,6 +5,7 @@
 •	querySelectorAll("css-selector")- Finds all matching elements, returns a NodeList (can use forEach).
 
 
+
 **2.	 How to create and insert a new element into the DOM ?**
  let newDiv = document.createElement("div");  
  newDiv.innerText = "Hello World"; 
