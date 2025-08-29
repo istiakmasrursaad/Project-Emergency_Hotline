@@ -24,7 +24,7 @@
                     <p id="heart-count">0</p><img src="assets/heart.png" alt="" class="h-[26px] w-[26px]">
                 </li>
                 <li class="flex justify-center items-center font-bold px-5 py-1 gap-2 bg-[#41FF6B1A] rounded-3xl">
-                    <p id="coin-count">100</p><img src="assets/coin.png" alt="" class="h-[25px] w-[25px]">
+                    <p id="coin">100</p><img src="assets/coin.png" alt="" class="h-[25px] w-[25px]">
                 </li>
                 <li class="flex justify-center items-center px-5 py-1 bg-[#00A63E] text-white rounded-3xl font-bold"><span id="copy-count" class="mr-3">0</span> Copy</li>
             </ol>
@@ -40,13 +40,13 @@
         </div>
 
         <div class="CardParent bg-[#F5FFF6] lg:pb-10 flex flex-col lg:flex-row justify-between">
-            <div class="card-container pt-8 flex flex-wrap justify-center lg:gap-15 ">
+            <div class="card-container pt-8 flex flex-wrap justify-center gap-4 lg:gap-15 ">
                 <div class="lg:card-1  w-[345px] bg-white shadow-md rounded-2xl p-3">
                     <div class="flex justify-between items-center">
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/emergency.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_01">National Emergency Number</h2>
                     <p class="text-[18px] text-gray-600">National Emergency</p>
@@ -54,8 +54,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">All</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_01')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_01')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
                         <button id="callBtn_01"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -66,7 +66,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/police.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_02">Police Helpline Number</h2>
                     <p class="text-[18px] text-gray-600">Police</p>
@@ -74,8 +74,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Police</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_02')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_02')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
                         <button id="callBtn_02"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -86,7 +86,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/fire-service.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_03">Fire Service Number</h2>
                     <p class="text-[18px] text-gray-600">Fire Service</p>
@@ -94,8 +94,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Fire</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_03')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_03')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
                         <button id="callBtn_03"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -106,7 +106,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/ambulance.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_04">Ambulance Number</h2>
                     <p class="text-[18px] text-gray-600">Ambulance</p>
@@ -114,8 +114,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Health</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_04')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_04')" ><i class="fa-regular fa-copy mr-2 "></i>Copy</button>
                         <button id="callBtn_04"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -126,7 +126,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/emergency.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_05">Women & Child Helpline</h2>
                     <p class="text-[18px] text-gray-600">Women & Child Helpline</p>
@@ -134,8 +134,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Help</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_05')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_05')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                         <button id="callBtn_05"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -147,7 +147,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/emergency.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_06">Anti-Corruption Helpline</h2>
                     <p class="text-[18px] text-gray-600">Anti-Corruption</p>
@@ -155,8 +155,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Help</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_06')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_06')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                         <button id="callBtn_06"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -169,7 +169,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/emergency.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_07">Electricity Helpline</h2>
                     <p class="text-[18px] text-gray-600">Anti-Corruption</p>
@@ -177,8 +177,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Electricity</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_07')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_07')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                         <button id="callBtn_07"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -191,7 +191,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/brac.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_08">Brac Helpline</h2>
                     <p class="text-[18px] text-gray-600">Brac</p>
@@ -199,8 +199,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">NGO</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_08')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_08')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                         <button id="callBtn_08"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -213,7 +213,7 @@
                         <span class=" bg-[#FFE3E2] p-3 rounded-lg">
                             <img src="assets/Bangladesh-Railway.png" alt="" class="h-[30px] w-[30px]">
                         </span>
-                        <img src="/assets/heart_card.png" class=" w-[24px] h-[24px]" alt="">
+                        <img src="/assets/heart_card.png" class="heart w-[24px] h-[24px]" alt="">
                     </div>
                     <h2 class="font-bold text-[20px] mt-4" id="title_09">Bangladesh-Railway Helpline</h2>
                     <p class="text-[18px] text-gray-600">Bangladesh-Railway</p>
@@ -221,8 +221,8 @@
                     <span class=" px-3 py-1 text-[18px] bg-slate-200 rounded-2xl ">Travel</span>
                     <div class="mt-2 flex justify-between">
                         <button
-                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg
-                            onclick="copyNumber('num_09')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
+                            class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg"
+                            onclick="copyCounter('num_09')"><i class="fa-regular fa-copy mr-2"></i>Copy</button>
                         <button id="callBtn_09"
                             class="border-1 border-gray-300 w-[140px] h-[40px] rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone mr-2"></i>Call</button>
                     </div>
@@ -230,7 +230,7 @@
                 
             </div>
             
-            <div id="callHistory" class=" call-history mt-3 lg:w-[745px] bg-white row-span-2 shadow-md order-last lg:order-none " >
+            <div id="callHistory" class=" call-history mt-3 w-96 ml-6 lg:ml-0 h-[350px] lg:w-[945px] bg-white lg:h-[975px] row-span-2 shadow-md order-last lg:order-none rounded-3xl" >
                     <div class="flex justify-between items-center p-3">
                         <p class="font-semibold text-[18px]"><i class="fa-regular fa-clock mr-1"></i>Call History</p>
                         <p class="flex justify-center items-center px-5 py-2 bg-[#00A63E] text-white rounded-3xl font-[600]" id="clearBtn">Clear</p>
