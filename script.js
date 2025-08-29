@@ -76,5 +76,3 @@ function copyCounter(id) {
   let copyCount = parseInt(document.getElementById("copy-count").innerText);
   document.getElementById("copy-count").innerText = copyCount + 1;
 }
-
-
