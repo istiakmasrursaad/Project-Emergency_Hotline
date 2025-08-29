@@ -39,7 +39,7 @@
                 Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
         </div>
 
-        <div class="CardParent bg-[#F5FFF6] lg:pb-10 flex flex-row justify-between">
+        <div class="CardParent bg-[#F5FFF6] lg:pb-10 flex flex-col lg:flex-row justify-between">
             <div class="card-container pt-8 flex flex-wrap justify-center lg:gap-15 ">
                 <div class="lg:card-1  w-[345px] bg-white shadow-md rounded-2xl p-3">
                     <div class="flex justify-between items-center">
@@ -230,11 +230,10 @@
                 
             </div>
             
-            <div class=" call-history mt-3  w-[745px] bg-white row-span-2 shadow-md " id="callHistory">
-                    <div class="flex justify-between items-center p-3" id="">
+            <div id="callHistory" class=" call-history mt-3 lg:w-[745px] bg-white row-span-2 shadow-md order-last lg:order-none " >
+                    <div class="flex justify-between items-center p-3">
                         <p class="font-semibold text-[18px]"><i class="fa-regular fa-clock mr-1"></i>Call History</p>
-                        <p class="flex justify-center items-center px-5 py-2 bg-[#00A63E] text-white rounded-3xl font-[600] "
-                            id="clearBtn">Clear</p>
+                        <p class="flex justify-center items-center px-5 py-2 bg-[#00A63E] text-white rounded-3xl font-[600]" id="clearBtn">Clear</p>
                     </div>
                     <div id="clearAll">
                     </div>
