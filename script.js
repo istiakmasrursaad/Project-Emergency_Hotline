@@ -18,7 +18,7 @@ for (let i = 1; i <= 9; i++) {
             let coin = parseInt(document.getElementById("coin").innerText);
 
             if (coin >= 20) {
-                alert("Call in progress to" + name +"-"+ number)
+                alert("Call in progress to " + name +"-"+ number)
 
                 let newCoin = coin - 20;
                 document.getElementById("coin").innerText = newCoin;
@@ -30,7 +30,7 @@ for (let i = 1; i <= 9; i++) {
                 <div class="flex justify-between">
                     <div>
                         <p class="font-semibold text-[18px]">${name}</p>
-                        <p class="text-[18px]">${number}</p>
+                        <p class="text-[16px]">${number}</p>
                     </div>
                     <div class="text-xs text-green-500 ">Time: ${time}</div>
                 </div>
