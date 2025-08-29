@@ -15,4 +15,13 @@ for (let i = 0; i < initialHearts.length; i++) {
 }
 
 
+//copy counter
+function copyCounter(id) {
+    let text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
+    alert(text+" -Copied to clipboard & copt counter increased");
+    let copyCount = parseInt(document.getElementById("copy-count").innerText);
+    document.getElementById("copy-count").innerText = copyCount + 1;
+}
+
 
